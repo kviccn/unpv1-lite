@@ -1,0 +1,2 @@
+CC=clang
+CFLAGS=-Wall -g -I../unp_lite -L../unp_lite -lunp_lite
