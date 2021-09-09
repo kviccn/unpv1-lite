@@ -11,10 +11,12 @@
 #include <strings.h>
 #include <unistd.h>
 
-#define MAXLINE 4096
+#include "error.h"
+#include "wrapsock.h"
+#include "wrapunix.h"
 
-// error
-void err_quit(const char *fmt, ...);
-void err_sys(const char *fmt, ...);
+#define LISTENQ 1024
+
+#define MAXLINE 4096
 
 #endif

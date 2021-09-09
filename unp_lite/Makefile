@@ -1,6 +1,6 @@
 CC=clang
 
-objects=error.o
+objects := $(patsubst %.c, %.o, $(wildcard *.c))
 
 TARGET=libunp_lite.a
 
