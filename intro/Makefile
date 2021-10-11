@@ -6,7 +6,10 @@ daytimetcpcli: daytimetcpcli.c
 daytimetcpsrv: daytimetcpsrv.c
 	$(CC) -o $@ $< $(CFLAGS)
 
+byteorder: byteorder.c
+	$(CC) -o $@ $< $(CFLAGS)
+
 .PHONY: clean
 
 clean:
-	rm -f daytimetcpcli daytimetcpsrv
+	rm -f daytimetcpcli daytimetcpsrv byteorder
