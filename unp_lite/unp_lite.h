@@ -13,6 +13,7 @@
 #include <unistd.h>
 
 #include "error.h"
+#include "read_write.h"
 #include "sock.h"
 #include "wrapsock.h"
 #include "wrapunix.h"
